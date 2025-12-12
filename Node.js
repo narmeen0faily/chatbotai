@@ -29,3 +29,7 @@ const run = async () => {
 };
 
 run();
+
+app.get("/", (req, res) => {
+  res.send("Server is running! Use POST /api/chat to send messages.");
+});
